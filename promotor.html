@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Mercados</title>
+  <link rel="stylesheet" href="mercados.css">
+</head>
+<body>
+  <header>
+    <h1>Mercados</h1>
+    <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+  </header>
+
+  <div id="overlay" class="overlay" onclick="fecharSidebar()"></div>
+  <div id="sidebar" class="sidebar">
+    <span class="fechar" onclick="fecharSidebar()">&times;</span>
+    <h2>Menu</h2>
+    <p>Conteúdo genérico aqui...</p>
+  </div>
+
+  <main>
+    <ul class="lista-mercados" id="lista-mercados"></ul>
+  </main>
+
+  <div id="detalhes" class="modal">
+    <div class="conteudo">
+      <span class="fechar" onclick="fecharDetalhes()">&times;</span>
+      <h2 id="nome-mercado"></h2>
+      <p id="endereco-mercado"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 MerchTech</p>
+  </footer>
+
+  <!-- IMPORTANTE -->
+  <script src="promotor.js"></script>
+  
+</body>
+</html>
